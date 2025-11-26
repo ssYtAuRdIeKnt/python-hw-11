@@ -3,7 +3,6 @@ import pytest
 from sqlalchemy.pool import StaticPool
 from sqlalchemy.orm import Session
 
-# Set fake DB URL before imports
 os.environ["DATABASE_URL"] = "sqlite+pysqlite:///:memory:"
 
 from fastapi.testclient import TestClient
